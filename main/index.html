@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plataforma institucional, programação e acervo histórico da Mostra Competitiva de Cinema Negro Adélia Sampaio.">
+  <title>Mostra Competitiva Adélia Sampaio | Cinema Negro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho e Navegação -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#inicio" class="logo">
+        <span class="logo-tag">MOSTRA COMPETITIVA</span>
+        <strong>ADÉLIA SAMPAIO</strong>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="#sobre">A Mostra</a></li>
+          <li><a href="#programacao">Programação</a></li>
+          <li><a href="#selecao">Filmes</a></li>
+          <li><a href="#acervo">Edições Anteriores</a></li>
+          <li><a href="#inscricoes">Inscrições 2027</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- Hero Banner -->
+    <section class="hero">
+      <div class="container hero-content">
+        <span class="badge">Protagonismo • Memória • Cinema Negro</span>
+        <h1>Celebrando as narrativas e o olhar de realizadores negros no Brasil</h1>
+        <p>
+          Espaço permanente de difusão audiovisual, formação, debates e preservação histórica da Mostra Competitiva de Cinema Negro Adélia Sampaio.
+        </p>
+        <div class="hero-actions">
+          <a href="#programacao" class="btn btn-primary">Ver Programação</a>
+          <a href="#acervo" class="btn btn-outline">Explorar Acervo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre a Mostra e Homenageada -->
+    <section id="sobre" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2 class="section-title">Sobre a Mostra e Adélia Sampaio</h2>
+          <p>
+            Criada com o objetivo de fortalecer, dar visibilidade e premiar produções audiovisuais dirigidas por cineastas negros e negras, a <strong>Mostra Competitiva Adélia Sampaio</strong> consolidou-se como um marco de resistência cultural e democratização do cinema no Distrito Federal e no Brasil.
+          </p>
+          <p>
+            O festival homenageia <strong>Adélia Sampaio</strong>, cineasta carioca pioneira e primeira mulher negra a dirigir um longa-metragem comercial no Brasil (<em>Amor Maldito</em>, 1984), abrindo caminhos fundamentais para as gerações seguintes do audiovisual brasileiro.
+          </p>
+        </div>
+        <div class="highlight-card">
+          <h3>Eixos de Atuação</h3>
+          <ul class="check-list">
+            <li>Exibição gratuita de curtas e longas-metragens</li>
+            <li>Oficinas de formação técnica e linguagem audiovisual</li>
+            <li>Rodas de conversa e debates com realizadores</li>
+            <li>Preservação da memória e catálogo digital permanente</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programação com Filtro Dinâmico -->
+    <section id="programacao" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Grade de Programação</h2>
+          <p>Filtre as atividades por categoria para planejar sua participação.</p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filtrar programação">
+          <button class="filter-btn active" data-filter="todos">Todos</button>
+          <button class="filter-btn" data-filter="exibicao">Exibições</button>
+          <button class="filter-btn" data-filter="oficina">Oficinas</button>
+          <button class="filter-btn" data-filter="debate">Debates</button>
+        </div>
+
+        <div id="programacaoList" class="cards-grid">
+          <!-- Renderizado via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Catálogo de Filmes Selecionados -->
+    <section id="selecao" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Seleção de Filmes</h2>
+          <p>Conheça as obras selecionadas, suas sinopses e fichas técnicas.</p>
+        </div>
+
+        <div class="search-box">
+          <label for="searchFilme" class="sr-only">Buscar filme ou direção</label>
+          <input type="text" id="searchFilme" placeholder="Buscar por título, direção ou estado (ex: DF, BA, SP)...">
+        </div>
+
+        <div id="filmesList" class="cards-grid">
+          <!-- Renderizado via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Repositório Histórico / Edições Anteriores -->
+    <section id="acervo" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Repositório e Edições Anteriores</h2>
+          <p>Memória institucional das edições já realizadas pela Mostra.</p>
+        </div>
+
+        <div id="acervoList" class="timeline-grid">
+          <!-- Renderizado via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Inscrições e Planejamento 2027 -->
+    <section id="inscricoes" class="section">
+      <div class="container info-banner">
+        <div>
+          <span class="badge">Planejamento Institucional</span>
+          <h2>Edital e Submissões — Próxima Edição (2027)</h2>
+          <p>
+            Esta plataforma integra o cronograma de modernização digital da Mostra, com implantação operacional oficial prevista para a edição de <strong>2027</strong>. Acompanhe o regulamento e prepare sua obra para as próximas chamadas públicas.
+          </p>
+        </div>
+        <div class="info-banner-actions">
+          <button id="btnRegulamento" class="btn btn-primary">Ler Diretrizes Gerais</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section section-alt">
+      <div class="container grid-2">
+        <div>
+          <h2 class="section-title">Contato e Produção</h2>
+          <p>
+            Dúvidas sobre programação, imprensa, parcerias institucionais ou acervo? Envie uma mensagem direta para a equipe de produção.
+          </p>
+          <ul class="contact-details">
+            <li><strong>Local:</strong> Brasília – Distrito Federal</li>
+            <li><strong>E-mail:</strong> contato@mostraadeliasampaio.com</li>
+            <li><strong>Realização:</strong> Coordenação da Mostra Competitiva Adélia Sampaio</li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+          </div>
+          <div class="form-group">
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto">
+              <option value="publico">Informações ao Público</option>
+              <option value="cineasta">Inscrições / Realizadores</option>
+              <option value="imprensa">Imprensa e Divulgação</option>
+              <option value="parceria">Parcerias e Apoio</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Escreva sua mensagem..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Enviar Mensagem</button>
+          <p id="formFeedback" class="form-feedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal para Sinopse / Regulamento -->
+  <div id="modalOverlay" class="modal-overlay" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button id="modalClose" class="modal-close" aria-label="Fechar janela">&times;</button>
+      <h3 id="modalTitle">Título</h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p><strong>Mostra Competitiva de Cinema Negro Adélia Sampaio</strong> — Preservação, Memória e Difusão Audiovisual.</p>
+      <p class="footer-note">Projeto de Extensão Universitária • Análise e Desenvolvimento de Sistemas (Faculdade Senac-DF)</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
